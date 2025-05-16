@@ -6,9 +6,7 @@ class PageSubstitution:
         self.reference_string, self.frame_num, self.lista, self.page_fault_list = self.get_data()
 
     def get_data(self):
-        #reference_string = [int(x) for x in input("Inserisci le richieste delle pagine(es. 4,5,9,...)").split(",")]
-        reference_string = "7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1".split(",")
-        reference_string = [int(x) for x in reference_string]
+        reference_string = [int(x) for x in input("Inserisci le richieste delle pagine(es. 4,5,9,...)").split(",")]
         frame_num = int(input("Inserisci il numero di frame: "))
         lista = []
         page_fault_list = []
